@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <title>LIBERTAD ABOGADOS</title>
+    <link href="img/favicon.png" rel="shortcut icon">
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" media="screen" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="slideMenu/css/component.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="slideMenu/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+  </head>
+  <body class="cbp-spmenu-push">
+
+      <nav>
+        <div class="main">
+          <div class="logo">
+            <img src="img/logo_atrapalos.png">
+          </div>
+          <ul>
+            <li onclick="autoScroll('Tu_Derecho')" class="nav tu_derecho">Tu derecho</li>
+            <li onclick="autoScroll('Quienes_Somos')" class="nav quienes_somos">¿Quiénes somos?</li>
+            <li onclick="autoScroll('Tu_Tiempo')" class="nav tu_tiempo">Reclama tu tiempo</li>
+            <li onclick="autoScroll('Casos_Exito')" class="nav casos_exito">Casos de éxito</li>
+          </ul>
+          <div class="cont_scroll">
+            <div class="registro">
+              <p>
+                <span>Te asesoramos por correo</span><br>
+                Suscríbete al newsletter de Atrápalo y disfruta de tu tiempo libre con las mejores ofertas de ocio urbano y vacacional.
+              </p>
+              <div class="contNL">
+                <div class="formNL">
+                  <input placeholder="Correo:" type="mail" id="email">
+                  <div>
+                    <select name="id_localizacion" id="localizacion">
+                      <option value="">Provincia</option>
+                      <option value="1" title="Aguascalientes">Aguascalientes</option>
+                      <option value="2" title="Baja California Norte">Baja California Norte</option>
+                      <option value="3" title="Baja California Sur">Baja California Sur</option>
+                      <option value="4" title="Campeche">Campeche</option>
+                      <option value="7" title="Chiapas">Chiapas</option>
+                      <option value="8" title="Chihuahua">Chihuahua</option>
+                      <option value="5" title="Coahuila">Coahuila</option>
+                      <option value="6" title="Colima">Colima</option>
+                      <option value="10" title="Durango">Durango</option>
+                      <option value="15" title="Estado de México">Estado de México</option>
+                      <option value="11" title="Guanajuato">Guanajuato</option>
+                      <option value="12" title="Guerrero">Guerrero</option>
+                      <option value="13" title="Hidalgo">Hidalgo</option>
+                      <option value="14" title="Jalisco">Jalisco</option>
+                      <option value="9" title="México, D.F.">México, D.F.</option>
+                      <option value="16" title="Michoacán">Michoacán</option>
+                      <option value="17" title="Morelos">Morelos</option>
+                      <option value="18" title="Nayarit">Nayarit</option>
+                      <option value="19" title="Nuevo León">Nuevo León</option>
+                      <option value="20" title="Oaxaca">Oaxaca</option>
+                      <option value="21" title="Puebla">Puebla</option>
+                      <option value="22" title="Querétaro">Querétaro</option>
+                      <option value="23" title="Quintana Roo">Quintana Roo</option>
+                      <option value="24" title="San Luis Potosi">San Luis Potosi</option>
+                      <option value="25" title="Sinaloa">Sinaloa</option>
+                      <option value="26" title="Sonora">Sonora</option>
+                      <option value="27" title="Tabasco">Tabasco</option>
+                      <option value="28" title="Tamaulipas">Tamaulipas</option>
+                      <option value="29" title="Tlaxcala">Tlaxcala</option>
+                      <option value="30" title="Veracruz">Veracruz</option>
+                      <option value="31" title="Yucatán">Yucatán</option>
+                      <option value="32" title="Zacatecas">Zacatecas</option>
+                    </select>
+                </div>
+              </div>
+              <div id="send" class="btn btnNL">
+                <p>Enviar</p>
+              </div>
+              <div class="err">
+                <p class="hidden error" data-error="mail">* Error en el campo de email</p>
+                <p class="hidden error" data-error="localizacion">* Error en el campo de Provincia</p>
+                <p class="hidden error" data-error="succ">Muchas gracias por tu solicitud</p>
+                <p class="hidden error" data-error="error">Error al procesar tu solicitud</p>
+                <p class="hidden error" data-error="msjError"></p>
+              </div>
+            </div>
+            </div>
+            <div class="footer_menu">
+              <a href="https://www.atrapalo.com.mx/" target="_blank">
+                <p>DESCUBRE LAS MEJORES OPCIONES PARA APROVECHAR TU TIEMPO LIBRE</p>
+                <img src="img/icono_atrapalo.png"><p>ATRÁPALO.COM.MX</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="movilNav">
+        <div  id="showLeft">
+          <img src="img/menu.png">
+        </div>
+      </div>
+      <nav class="movil cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1"> 
+        <div class="cont_scroll_movil">
+          <div class="logo">
+            <img src="img/logo_atrapalos.png">
+          </div>
+          <ul>
+            <li onclick="autoScroll('Tu_Derecho')" class="nav tu_derecho">Tu derecho</li>
+            <li onclick="autoScroll('Quienes_Somos')" class="nav quienes_somos">¿Quiénes somos?</li>
+            <li onclick="autoScroll('Tu_Tiempo')" class="nav tu_tiempo">Reclama tu tiempo</li>
+            <li onclick="autoScroll('Casos_Exito')" class="nav casos_exito">Casos de éxito</li>
+          </ul>
+          <div class="footer_menu">
+            <a href="https://www.atrapalo.com.mx/" target="_blank">
+              <p>DESCUBRE LAS MEJORES OPCIONES PARA APROVECHAR TU TIEMPO LIBRE</p>
+              <img src="img/icono_atrapalo.png"><p>ATRÁPALO.COM.MX</p>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div id="inicio" class="inicioActive">
+        <div>
+          <div class="logoInicio">
+            <img src="img/logo_atrapalos.png">
+          </div>
+          <input placeholder="Usuario:" type="mail" id="usuario">
+          <input placeholder="Contraseña:" type="password" id="pass">
+          <div class="msjErr">Usuario o contraseña inválidos.</div>
+          <div class="btn" id="entrar">
+            <p>Entrar</p>
+          </div>
+        </div>
+      </div>
+      <section id="cont">
+        <div id="Tu_Derecho" class="contenedor">
+          <div class="video">
+            <img src="img/play_video.png" id="play">
+          </div>
+          <div>
+            <div class="btn"  onclick="autoScroll('Tu_Tiempo')">
+              <p>Reclamar mi libertad</p>
+          </div>
+            <img src="img/mazo.png" class="derecho_img">
+          </div>
+        </div>
+        <div id="Quienes_Somos" class="contenedor">
+          <div class="title_sec">
+            <div>¿Quiénes </div>
+            <div>Somos?</div>
+          </div>
+          <div class="ifoQS">
+            <div>
+              <img src="img/foto_ovalo.png">
+            </div>
+            <div>
+              <p>
+                Libertad Abogados es el primer bufete del mundo especializado en el Derecho Libretiempista, término acuñado a partir del artículo 24 de la Declaración Universal de Derechos Humanos, que estipula que toda persona tiene derecho a contar con tiempo libre.</br></br>Sabemos que la línea que separa nuestra vida laboral de nuestra vida personal muchas veces se difumina, permitiendo que el trabajo invada nuestras vidas, y haciendo que no dispongamos de toda la libertad que necesitamos. Nuestra misión es defender ese tiempo libre y facilitar su disfrute, motivo por el que nos hemos aliado con atrápalo.com, el mejor servicio online de ofertas de ocio urbano y vacacional.</br></br>Si crees que no tienes tiempo libre o que el que tienes es insuficiente, déjanos ayudarte y ponte en contacto con nosotros. No aceptamos casos, aceptamos compromisos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="Tu_Tiempo" class="contenedor">
+          <div class="slider1 flexslider">
+            <ul class="slides">
+              <li style="background: url('img/banner01.jpg'); background-size: 100%;">
+                <!--<img src="slide1.jpg" />-->
+                <div class="flex-caption">
+                  <p class="titleSlider"><span>El</span> Rey León</p>
+                  <p class="subtitleSlider">Boletos para el rey león desde <span>$700</span></p>
+                  <div class="linkSlider">
+                    <a href="https://www.atrapalo.com.mx/" target="_blank">Quiero mi tiempo libre</a>
+                  </div>
+                </div>
+              </li>
+              <li style="background: url('img/banner02.jpg'); background-size: 100%;">
+                <!--<img src="slide1.jpg" />-->
+                <div class="flex-caption">
+                  <p class="titleSlider">Tailandia</p>
+                  <p class="subtitleSlider">Viaja al paraiso desde <span>$1400</span></p>
+                  <div class="linkSlider">
+                    <a href="https://www.atrapalo.com.mx/" target="_blank">Quiero mi tiempo libre</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="slider2 flexslider">
+            <ul class="slides">
+              <li style="background: url('img/banner02.jpg'); background-size: 100%;">
+                <!--<img src="slide1.jpg" />-->
+                <div class="flex-caption">
+                  <p class="titleSlider">Tailandia</p>
+                  <p class="subtitleSlider">Viaja al paraiso desde <span>$1400</span></p>
+                  <div class="linkSlider">
+                    <a href="https://www.atrapalo.com.mx/" target="_blank">Quiero mi tiempo libre</a>
+                  </div>
+                </div>
+              </li>
+              <li style="background: url('img/banner01.jpg'); background-size: 100%;">
+                <!--<img src="slide1.jpg" />-->
+                <div class="flex-caption">
+                  <p class="titleSlider"><span>El</span> Rey León</p>
+                  <p class="subtitleSlider">Boletos para el rey león desde <span>$700</span></p>
+                  <div class="linkSlider">
+                    <a href="https://www.atrapalo.com.mx/" target="_blank">Quiero mi tiempo libre</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="Casos_Exito" class="contenedor">
+          <div class="title_sec">
+            <div>Casos de </div>
+            <div>Éxito</div>
+          </div>
+          <div class="cont_CE">
+            <div class="revista2">
+              <img src="img/btn_leernota.png" id="leer2">
+            </div>
+            <div class="revista1">
+              <img src="img/btn_leernota.png" id="leer1">
+            </div>
+            <img src="img/periodicos.png">
+            <div class="revista3">
+              <img src="img/btn_leernota.png" id="leer3">
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="lightbox" id="leer1img">
+        <div class="cont-img">
+          <img src="img/cerrar.png" class="close" id="close1">
+          <img src="img/periodico02.png" class="leerImg">
+        </div>
+      </div>
+      <div class="lightbox" id="leer2img">
+        <div class="cont-img">
+          <img src="img/cerrar.png" class="close" id="close2">
+          <img src="img/periodico03.png" class="leerImg">
+        </div>
+      </div>
+      <div class="lightbox" id="leer3img">
+        <div class="cont-img">
+          <img src="img/cerrar.png" class="close" id="close3">
+          <img src="img/periodico01.png" class="leerImg">
+        </div>
+      </div>
+
+      <div class="lightbox" id="video">
+        <img src="img/cerrar.png" class="close" id="close4">
+        <iframe src="https://www.youtube.com/embed/5k8WjQhkXbU?enablejsapi=1" frameborder="0" 
+        allowfullscreen class="videoBox"></iframe>
+      </div>
+
+      <footer>
+        <div>
+          <p>LIBERTAD ABOGADOS Y ATRÁPALO.COM</p>
+          <p> UNIDOS POR EL DERECHO AL TIEMPO LIBRE</p>
+          <div>
+            <a href="https://www.facebook.com/atrapalomexico " target="_blank">b</a>
+            <a href="https://twitter.com/atrapaloMexico" target="_blank">a</a>
+          </div>
+        </div>
+      </footer> 
+    </div>
+    <script src="slideMenu/js/classie.js"></script>
+    <script>
+      var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+        menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+        menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+        menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+        showLeft = document.getElementById( 'showLeft' ),
+        showRight = document.getElementById( 'showRight' ),
+        showTop = document.getElementById( 'showTop' ),
+        showBottom = document.getElementById( 'showBottom' ),
+        showLeftPush = document.getElementById( 'showLeftPush' ),
+        showRightPush = document.getElementById( 'showRightPush' ),
+        body = document.body;
+
+      showLeft.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeft' );
+      };
+      showRight.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuRight, 'cbp-spmenu-open' );
+        disableOther( 'showRight' );
+      };
+      showTop.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuTop, 'cbp-spmenu-open' );
+        disableOther( 'showTop' );
+      };
+      showBottom.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( menuBottom, 'cbp-spmenu-open' );
+        disableOther( 'showBottom' );
+      };
+      showLeftPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toright' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeftPush' );
+      };
+      showRightPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toleft' );
+        classie.toggle( menuRight, 'cbp-spmenu-open' );
+        disableOther( 'showRightPush' );
+      };
+
+      function disableOther( button ) {
+        if( button !== 'showLeft' ) {
+          classie.toggle( showLeft, 'disabled' );
+        }
+        if( button !== 'showRight' ) {
+          classie.toggle( showRight, 'disabled' );
+        }
+        if( button !== 'showTop' ) {
+          classie.toggle( showTop, 'disabled' );
+        }
+        if( button !== 'showBottom' ) {
+          classie.toggle( showBottom, 'disabled' );
+        }
+        if( button !== 'showLeftPush' ) {
+          classie.toggle( showLeftPush, 'disabled' );
+        }
+        if( button !== 'showRightPush' ) {
+          classie.toggle( showRightPush, 'disabled' );
+        }
+      }
+    </script>
+    <script type="text/javascript" src="js/script.js"></script> 
+    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script type="text/javascript">
+    window.__lc = window.__lc || {};
+    window.__lc.license = 7460301;
+    (function() {
+      var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+      lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+    })();
+    </script>
+    <!-- End of LiveChat code -->
+  </body>
+</html>
